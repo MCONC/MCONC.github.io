@@ -1,4 +1,50 @@
-<!DOCTYPE HTML>
-<html>
- <img src="comp_sci_website_image.pdf" width=100%>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay Text on Image</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: #f0f0f0;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .container {
+            position: absolute;
+            bottom: 20px; /* Adjust as needed */
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .word {
+            margin: 0 15px;
+            font-size: 24px;
+            display: inline-block;
+            text-decoration: none; /* Remove underline */
+            color: black; /* Change text color */
+        }
+        .word:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+<body>
+    <img src="final_website_image.png" alt="Background Image">
+    <div class="container">
+        <span class="word"><a href="resume_link.htm">resume</a></span>
+        <span class="word"><a href="https://oxyathletics.com/sports/mens-water-polo/roster/quin-concannon/8799">photos</a></span>
+        <span class="word"><a href="https://www.instagram.com/quin.concannon/">socials</a></span>
+    </div>
+</body>
+</html>
